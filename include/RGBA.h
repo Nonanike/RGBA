@@ -21,10 +21,10 @@ struct RGBA
     }
     void clamp(unsigned char _min, unsigned char _max)
     {
-        r=std::clamp(val:r.lo:_min,hi:_max);
-        g=std::clamp(val:g,lo:_min,hi:_max);
-        b=std::clamp(val:b,lo:_min,hi:_max);
-        a=std::clamp(val:a,lo=_min,hi=_max);
+        r=std::clamp(r, _min, _max);
+        g=std::clamp(g, _min, _max);
+        b=std::clamp(b, _min, _max);
+        a=std::clamp(a, _min, _max);
     }
 };
 
